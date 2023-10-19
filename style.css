@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: center; */
+  background-clip: border-box;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 1rem;
+  width: 400px;
+  border-radius: 1.25rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* text-align: center; */
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  max-width: 100%;
+  border-radius: 1.25rem;
+}
+
+.title {
+  text-align: center;
+  font-weight: 900;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  /* padding: 1rem; */
+  color: hsl(224, 23%, 55%);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+}
+
+.price-tag {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.price-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-text span:first-child {
+  font-weight: 700;
+}
+
+.price-text span:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+}
+
+.change-text {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all ease 0.25s;
+  color: hsl(245, 75%, 52%);
+}
+
+.change-text:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.payment-btn {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  font-size: 16px;
+}
+
+.payment-btn:hover {
+  background-color: hsl(223, 47%, 23%);
+}
+
+.cancel-btn {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.cancel-btn:hover {
+  background: none;
+  color: hsl(223, 47%, 23%);
+}
+
+@media (width <= 520px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
